@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Article" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ozy-72-qmE">
+                                <rect key="frame" x="140" y="28" width="320" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="N4l-2P-HCM"/>
+                                    <constraint firstAttribute="height" constant="180" id="R9y-P3-eWF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUf-1L-hJn">
+                                <rect key="frame" x="140" y="216" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Vsi-Vc-y12"/>
+                                    <constraint firstAttribute="width" constant="320" id="Y3z-mw-HnC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0w9-fv-nHf">
+                                <rect key="frame" x="140" y="245" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8VF-lW-IgI"/>
+                                    <constraint firstAttribute="width" constant="320" id="PQ1-2k-SgM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMZ-7E-gph">
+                                <rect key="frame" x="140" y="274" width="320" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="V9S-Eg-dYW"/>
+                                    <constraint firstAttribute="width" constant="320" id="o6x-bc-UWd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0w9-fv-nHf" firstAttribute="top" secondItem="EUf-1L-hJn" secondAttribute="bottom" constant="8" id="4K9-rF-a9g"/>
+                            <constraint firstItem="Ozy-72-qmE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Nd-u4-N5x"/>
+                            <constraint firstItem="0w9-fv-nHf" firstAttribute="centerX" secondItem="EUf-1L-hJn" secondAttribute="centerX" id="AxA-1p-oDF"/>
+                            <constraint firstItem="EUf-1L-hJn" firstAttribute="centerX" secondItem="Ozy-72-qmE" secondAttribute="centerX" id="CEG-zU-3Xe"/>
+                            <constraint firstItem="AMZ-7E-gph" firstAttribute="centerX" secondItem="0w9-fv-nHf" secondAttribute="centerX" id="LcI-eq-jte"/>
+                            <constraint firstItem="AMZ-7E-gph" firstAttribute="top" secondItem="0w9-fv-nHf" secondAttribute="bottom" constant="8" id="Ten-9j-4He"/>
+                            <constraint firstItem="Ozy-72-qmE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dHb-eX-VCI"/>
+                            <constraint firstItem="EUf-1L-hJn" firstAttribute="top" secondItem="Ozy-72-qmE" secondAttribute="bottom" constant="8" id="leC-Xy-njb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerImageView" destination="Ozy-72-qmE" id="PV6-MK-YoB"/>
+                        <outlet property="bodyTextView" destination="AMZ-7E-gph" id="fjc-Dv-acB"/>
+                        <outlet property="dateLabel" destination="0w9-fv-nHf" id="YXl-if-emW"/>
+                        <outlet property="titleLabel" destination="EUf-1L-hJn" id="t3h-Rx-7t6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
